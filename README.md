@@ -1,2 +1,3 @@
-# AME494Fall2020
-assignments
+Anaïs Gray
+
+1213894251
