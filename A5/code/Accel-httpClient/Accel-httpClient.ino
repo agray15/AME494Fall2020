@@ -11,7 +11,7 @@ TFT_eSPI *tft;
 BMA *sensor;
 
 
-const char* ssid = "NETGEAR29-5G";
+const char* ssid = "NETGEAR29";
 const char* password = "quicktree607";
 
 //Your Domain name with URL path or IP address with path
