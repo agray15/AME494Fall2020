@@ -6,11 +6,35 @@ var methodOverride = require('method-override');
 var hostname = process.env.HOSTNAME || 'localhost';
 var port = 1234;
 
+//add
 app.get("/add", function (req, res) {
     var a = parseFloat(req.query.a);
     var b = parseFloat(req.query.b);
     res.send((a+b).toString()); // send response body
 });
+
+//subtract
+app.get("/subtract", function (req, res) {
+    var a = parseFloat(req.query.a);
+    var b = parseFloat(req.query.b);
+    res.send((a-b).toString()); // send response body
+});
+
+//multiply
+app.get("/multiply", function (req, res) {
+    var a = parseFloat(req.query.a);
+    var b = parseFloat(req.query.b);
+    res.send((a*b).toString()); // send response body
+});
+
+//divide
+app.get("/divide", function (req, res) {
+    var a = parseFloat(req.query.a);
+    var b = parseFloat(req.query.b);
+    res.send((a/b).toString()); // send response body
+});
+
+
 
 app.use(methodOverride());
 app.use(bodyParser());
